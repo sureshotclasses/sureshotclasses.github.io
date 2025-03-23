@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("registrationForm");
 
-    // 🔹 Load `config.json` to get Web App URL & Google Sheet ID
     fetch("./config.json")
         .then(response => response.json())
         .then(config => {
@@ -11,33 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
             form.addEventListener("submit", function (event) {
                 event.preventDefault();
 
-                // 🔹 Validate required fields
-                const requiredFields = ["name", "father_name", "mother_name", "address", "study", "mobile"];
-                let valid = true;
-
-                requiredFields.forEach(field => {
-                    const input = document.getElementById(field);
-                    if (!input.value.trim()) {
-                        valid = false;
-                        input.style.border = "2px solid red"; // Highlight missing fields
-                    } else {
-                        input.style.border = ""; // Remove highlight if field is filled
-                    }
-                });
-
-                if (!valid) {
-                    alert("⚠️ Please fill in all required fields before submitting.");
-                    return;
-                }
-
                 let formData = new FormData(form);
-                let jsonData = { sheetId: sheetId }; // Include Google Sheet ID in request
+                let jsonData = { sheetId: sheetId };
 
                 formData.forEach((value, key) => {
                     jsonData[key] = value;
                 });
 
-                // 🔹 Send form data to Google Apps Script
                 fetch(scriptURL, {
                     method: "POST",
                     mode: "cors",
