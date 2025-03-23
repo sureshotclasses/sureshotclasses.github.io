@@ -20,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     method: "POST",
                     mode: "cors",
                     body: JSON.stringify(jsonData),
-                    headers: { "Content-Type": "application/json" }
+                    headers: { 
+                        "Content-Type": "application/json"
+                    }
                 })
                 .then(response => {
                     if (!response.ok) {
