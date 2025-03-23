@@ -1,0 +1,11 @@
+# Ignore API keys & credentials
+.env
+# config.json
+secret_keys.txt
+google-sheets.gs
+
+# Node.js (if used)
+node_modules/
+package-lock.json
+
+folder_structure

@@ -1,19 +1,20 @@
-/* General Reset */
+/* 🔹 General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
 }
 
+/* 🔹 Body Styling */
 body {
     background: #f4f4f4;
     color: #333;
     text-align: center;
 }
 
-/* Header & Navigation */
+/* 🔹 Header & Navigation */
 header {
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: #fff;
@@ -27,7 +28,6 @@ header {
 }
 
 header h1 {
-    margin: 0;
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -59,25 +59,42 @@ nav ul li a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Sections */
+
+/* 🔹 Ensure Home Section Starts Below the Header */
+#home {
+    display: block;
+    padding: 120px 20px; /* 🔹 Ensures enough space below the header */
+    margin-top: 80px; /* 🔹 Adjusted to push content below the fixed header */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔹 Sections Styling (Fix for white screen issue) */
+/* 🔹 Fix: Ensure Sections are Visible */
+/* 🔹 Fix: Prevent Section Titles from Hiding Under Header */
 .section {
-    padding: 80px 20px;
-    margin-top: 70px;
+    display: block;
+    padding: 120px 20px; /* 🔹 Increased top padding to push content below header */
+    margin-top: -80px; /* 🔹 Negative margin to compensate for fixed header */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+/* 🔹 Make sections visible when scrolled */
 .section.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Registration Form */
+/* 🔹 Registration Form */
 form {
     width: 90%;
     max-width: 500px;
@@ -118,7 +135,7 @@ form button:hover {
     background: #0056b3;
 }
 
-/* Footer */
+/* 🔹 Footer */
 footer {
     background: #333;
     color: #fff;
@@ -129,9 +146,26 @@ footer {
     font-size: 14px;
 }
 
-/* Animations */
+/* 🔹 Animations */
 @media (prefers-reduced-motion: no-preference) {
     .section {
         transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+}
+
+/* 🔹 Responsive Design (Mobile-Friendly) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
     }
 }
