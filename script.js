@@ -5,13 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(config => {
             const scriptURL = config.GOOGLE_APPS_SCRIPT_WEB_APP_URL;
-            const sheetId = config.GOOGLE_SHEET_ID;
 
             form.addEventListener("submit", function (event) {
                 event.preventDefault();
 
                 let formData = new FormData(form);
-                let jsonData = { sheetId: sheetId };
+                let jsonData = {}; 
 
                 formData.forEach((value, key) => {
                     jsonData[key] = value;
@@ -23,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     body: JSON.stringify(jsonData),
                     headers: { "Content-Type": "application/json" }
                 })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     if (data.result === "Success") {
                         alert("✅ Registration submitted successfully!");
