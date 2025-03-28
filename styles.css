@@ -438,4 +438,8 @@ footer {
         width: 100%;
         padding: 15px;
     }
+
+    #home, #announcements_,#courses_,#contact_,#location_,#registration_{
+        margin-top: 250px;
+    }
 }
