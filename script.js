@@ -46,3 +46,65 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("❌ Failed to load config", error));
 });
+
+// 🔹 Add "Back to Top" Button Logic at the END of script.js
+window.onscroll = function () {
+    const backToTopButton = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+// 🔹 Smooth Scroll to Top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+function toggleCourse(id) {
+    const details = document.getElementById(id);
+    if (details) {
+      details.style.display = details.style.display === "block" ? "none" : "block";
+    }
+}
+
+// 🔹 Auto-Sliding Testimonials
+document.addEventListener("DOMContentLoaded", function () {
+    let index = 0;
+    const testimonials = document.querySelectorAll(".testimonial");
+    
+    function showTestimonial() {
+        testimonials.forEach((t, i) => {
+            t.style.transform = `translateX(-${index * 100}%)`;
+        });
+        index = (index + 1) % testimonials.length;
+    }
+
+    setInterval(showTestimonial, 3000); // Change every 3 seconds
+});
+
+// 🔹 Admissions Countdown Timer
+document.addEventListener("DOMContentLoaded", function () {
+    const targetDate = new Date("April 15, 2025 23:59:59").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
+
+        if (timeLeft > 0) {
+            document.getElementById("days").innerText = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            document.getElementById("hours").innerText = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById("minutes").innerText = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("seconds").innerText = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        } else {
+            document.getElementById("countdown").innerHTML = "<h2>🎉 Admissions Now Closed!</h2>";
+        }
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+});

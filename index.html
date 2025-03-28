@@ -10,24 +10,33 @@
 <body>
     <!-- 🔹 Header Section (Navigation) -->
     <header>
-        <h1>Sureshot Classes  v1.6</h1>
+        <h1>Sureshot Classes  v1.8</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#announcements">Announcements</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#registration">Register</a></li>
+                <li><a href="#announcements1">Announcements</a></li>
+                <li><a href="#courses1">Courses</a></li>
+                <li><a href="#contact1">Contact</a></li>
+                <li><a href="#location1">Location</a></li>
+                <li><a href="#registration1">Register</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- 🔹 Home Section -->
-    <section id="home" class="section">
+    <section id="home">
         <h2>Welcome to Sureshot Classes</h2>
         <p>Personalized learning experience with guaranteed results. Join our 7-day free demo classes today!</p>
+        <a href="#registration" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- 🔹 Announcements -->
+    <section id="announcements_" class="section"></section>
+    <section id="announcements" class="section">
+        <h2>Latest Announcements</h2>
+        <marquee behavior="scroll" direction="left">
+            🎉 Admissions Open for 2025! | 🎉 Join our 7-day free demo classes! | 💡 Scholarships Available for meritorious students | 🏆 Awards for Top Performers 🎉
+        </marquee>
     </section>
 
     <!-- 🔹 About Us -->
@@ -37,74 +46,160 @@
     </section>
 
     <!-- 🔹 Courses Section -->
+    <section id="courses_" class="section"></section>
     <section id="courses" class="section">
-        <h2>Our Courses</h2>
-        <ul>
-            <li>Mathematics (Class 2-10)</li>
-            <li>Science (Physics, Chemistry, Biology)</li>
-            <li>English & Hindi Language Learning</li>
-            <li>Homework Assistance & Personalized Tutoring</li>
-        </ul>
+        <h2>📚 Our Courses</h2>
+        <div class="course-list">
+            <div class="course" onclick="toggleCourse('math')">
+              <h3>📘 Mathematics</h3>
+              <p class="course-details" id="math">
+                Covers Algebra, Geometry, Trigonometry, and Calculus with step-by-step problem-solving techniques.
+              </p>
+            </div>
+        
+            <div class="course" onclick="toggleCourse('science')">
+              <h3>🔬 Science</h3>
+              <p class="course-details" id="science">
+                Physics, Chemistry, and Biology explained with real-life examples and interactive experiments.
+              </p>
+            </div>
+        
+            <div class="course" onclick="toggleCourse('english')">
+              <h3>🗣 Spoken English</h3>
+              <p class="course-details" id="english">
+                Personalized spoken English course designed to help you speak confidently and effectively.              </p>
+            </div>
+        
+            <div class="course" onclick="toggleCourse('homework')">
+              <h3>✏️ Homework Assistance</h3>
+              <p class="course-details" id="homework">
+                Get step-by-step solutions and personalized expert guidance on daily homework assignments.
+              </p>
+            </div>
+        </div>
+
     </section>
 
-    <!-- 🔹 Announcements -->
-    <section id="announcements" class="section">
-        <h2>Announcements</h2>
-        <marquee behavior="scroll" direction="left">
-            🎉 Join our 7-day free demo classes! | Scholarships available for meritorious students | Awards & prizes for top performers 🎉
-        </marquee>
+    <section id="course-highlights">
+        <h2>📚 Why Choose Sureshot Classes?</h2>
+        <div class="highlights-container">
+            <div class="highlight">
+                <img src="assets/images/math.png" alt="Math">
+                <h3>Expert Math Coaching</h3>
+                <p>Concept-based learning with real-life applications and easy problem-solving techniques.</p>
+            </div>
+            <div class="highlight">
+                <img src="assets/images/science.png" alt="Science">
+                <h3>Science Made Easy</h3>
+                <p>Understand Physics, Chemistry, and Biology with practical examples and experiments.</p>
+            </div>
+            <div class="highlight">
+                <img src="assets/images/homework.png" alt="Homework Assistance">
+                <h3>Homework Assistance</h3>
+                <p>Guided homework help and doubt clearing sessions for all subjects.</p>
+            </div>
+            <div class="highlight">
+                <img src="assets/images/trophies.png" alt="Awards">
+                <h3>Scholarships & Awards</h3>
+                <p>Get recognized for excellence with scholarships and performance-based rewards.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>💬 What Our Students Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Sureshot Classes transformed my learning experience. The teachers are outstanding!"</p>
+                <h4>⭐️⭐️⭐️⭐️⭐️ - Rahul, Class 10</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The 7-day demo class was so helpful. Now, I feel confident in Math & Science!"</p>
+                <h4>⭐️⭐️⭐️⭐️⭐️ - Priya, Class 9</h4>
+            </div>
+            <div class="testimonial">
+                <p>"Highly recommended for CBSE students. The coaching method is excellent!"</p>
+                <h4>⭐️⭐️⭐️⭐️⭐️ - Ankit, Class 8</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="countdown">
+        <h2>🚀 Hurry! Admissions Closing Soon</h2>
+        <div id="timer">
+            <span id="days">00</span> Days 
+            <span id="hours">00</span> Hours 
+            <span id="minutes">00</span> Minutes 
+            <span id="seconds">00</span> Seconds
+        </div>
+        <a href="#registration_" class="cta-button">Register Now</a>
+    </section>
+
+    <section id="contact_"></section>
+    <section id="contact">
+        <h2>📩 Contact Us</h2>
+        <p>Have questions? Need help? Fill out the form below and we’ll get back to you soon!</p>
+
+        <form action="https://formsubmit.co/sureshotclasses11@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" required placeholder="Your Email">
+            <input type="tel" name="phone" required placeholder="Your Phone Number">
+            <textarea name="message" required placeholder="Your Message"></textarea>
+            
+            <!-- ✅ Hidden fields for customization -->
+            <input type="hidden" name="_subject" value="New Inquiry from Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thank-you.html">
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <!-- 🔹 Location Section (Google Maps Embed) -->
+    <section id="location_" class="section"></section>
     <section id="location" class="section">
-        <h2>Location</h2>
-        <p>We are located in Lalganj. Visit us for more details.</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902357821215!2d85.1767633!3d25.6077324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDM2JzI3LjgiTiA4NcKwMTAnMzYuNCJF!5e0!3m2!1sen!2sin!4v1614329428190!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </section>
+        <h2>📍 Visit Us</h2>
+        <p> </p>
+        <p><strong>Address:</strong> Sureshot Classes, Lalganj, India</p> <p>Locality- साँचे दरबार सब्जी मंडी, बाईपास रोड, लालगंज (वैशाली)</p>
+        <p><strong>Phone:</strong> <a href="tel:+919709169655">+91 97091 69655</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sureshotclasses11@gmail.com">sureshotclasses11@gmail.com</a></p>
 
-    <!-- 🔹 Contact Section -->
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:sureshotclasses11@gmail.com">sureshotclasses11@gmail.com</a></p>
-        <p>Phone: +91 XXXXX XXXXX</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14359.215389266907!2d85.16046771523605!3d25.87593254445859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed47341bd024b3%3A0x694ce228d5b5717!2sSanche%20Darbar%20Sabji%20Mandi!5e0!3m2!1sen!2sin!4v1742738100123!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>🔗 Connect with Us</h3>
+        <div class="social-icons">
+            <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a>
+            <a href="https://instagram.com/" target="_blank">📸 Instagram</a>
+        </div>
     </section>
 
     <!-- 🔹 Registration Form -->
+    <section id="registration_" class="section"></section>
     <section id="registration" class="section">
         <h2>Student Registration</h2>
         <form id="registrationForm">
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
             <label for="father_name">Father's Name:</label>
-            <input type="text" id="father_name" name="father_name" required>
+            <input type="text" id="father_name" name="father_name" required placeholder="Enter your father's name">
 
             <label for="mother_name">Mother's Name:</label>
-            <input type="text" id="mother_name" name="mother_name" required>
+            <input type="text" id="mother_name" name="mother_name" required placeholder="Enter your mother's name">
 
             <label for="address">Address:</label>
-            <textarea id="address" name="address" required></textarea>
-
-            <label for="adhar">Aadhar Number (Optional):</label>
-            <input type="text" id="adhar" name="adhar">
-
-            <label for="photo">Upload Photo (Optional):</label>
-            <input type="file" id="photo" name="photo" accept="image/*">
-
-            <label for="study">Current Study/School/College:</label>
-            <input type="text" id="study" name="study" required>
+            <textarea id="address" name="address" required placeholder="Enter your address (e.g.- Lalganj, Vaishali)"></textarea>
 
             <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" required>
-
-            <label for="email">Email (Optional):</label>
-            <input type="email" id="email" name="email">
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no.">
 
             <button type="submit">Submit Registration</button>
         </form>
     </section>
+
+    <!-- 🔹 Floating "Back to Top" Button -->
+    <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button>
 
     <!-- 🔹 Footer -->
     <footer>
