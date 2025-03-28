@@ -428,9 +428,8 @@ footer {
 
     header,nav{
         width: 100vw;
-
     }
-    
+
     nav ul {
         flex-direction: column;
         gap: 10px;
