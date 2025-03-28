@@ -16,9 +16,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#announcements_">Announcements</a></li>
                 <li><a href="#courses_">Courses</a></li>
-                <li><a href="#contact_">Contact</a></li>
-                <li><a href="#location_">Location</a></li>
                 <li><a href="#registration_">Register</a></li>
+                <li><a href="#location_">Location</a></li>
+                <li><a href="#contact_">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -77,7 +77,30 @@
               </p>
             </div>
         </div>
+    </section>
 
+    <!-- 🔹 Registration Form -->
+    <section id="registration_" class="section"></section>
+    <section id="registration" class="section">
+        <h2>Student Registration</h2>
+        <form id="registrationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required placeholder="Enter your father's name">
+
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required placeholder="Enter your mother's name">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required placeholder="Enter your address (e.g.- Lalganj, Vaishali)"></textarea>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no.">
+
+            <button type="submit">Submit Registration</button>
+        </form>
     </section>
 
     <section id="course-highlights">
@@ -135,32 +158,13 @@
         <a href="#registration_" class="cta-button">Register Now</a>
     </section>
 
-    <section id="contact_"></section>
-    <section id="contact">
-        <h2>📩 Contact Us</h2>
-        <p>Have questions? Need help? Fill out the form below and we’ll get back to you soon!</p>
-
-        <form action="https://formsubmit.co/sureshotclasses11@gmail.com" method="POST">
-            <input type="text" name="name" required placeholder="Your Name">
-            <input type="email" name="email" required placeholder="Your Email">
-            <input type="tel" name="phone" required placeholder="Your Phone Number">
-            <textarea name="message" required placeholder="Your Message"></textarea>
-            
-            <!-- ✅ Hidden fields for customization -->
-            <input type="hidden" name="_subject" value="New Inquiry from Website">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thank-you.html">
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
     <!-- 🔹 Location Section (Google Maps Embed) -->
     <section id="location_" class="section"></section>
     <section id="location" class="section">
         <h2>📍 Visit Us</h2>
         <p> </p>
-        <p><strong>Address:</strong> Sureshot Classes, Lalganj, India</p> <p>Locality- साँचे दरबार सब्जी मंडी, बाईपास रोड, लालगंज (वैशाली)</p>
+        <p><strong>Address:</strong> Sureshot Classes <p>By-pass Road, Lalganj, Vaihsali, Bihar, India PIN- 844121</p></p>
+        <p>Locality- साँचे दरबार सब्जी मंडी, बाईपास रोड, लालगंज (वैशाली)</p>
         <p><strong>Phone:</strong> <a href="tel:+919709169655">+91 97091 69655</a></p>
         <p><strong>Email:</strong> <a href="mailto:sureshotclasses11@gmail.com">sureshotclasses11@gmail.com</a></p>
 
@@ -174,27 +178,23 @@
         </div>
     </section>
 
-    <!-- 🔹 Registration Form -->
-    <section id="registration_" class="section"></section>
-    <section id="registration" class="section">
-        <h2>Student Registration</h2>
-        <form id="registrationForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+    <section id="contact_"></section>
+    <section id="contact">
+        <h2>📩 Contact Us</h2>
+        <p>Have questions? Need help? Fill out the form below and we’ll get back to you soon!</p>
 
-            <label for="father_name">Father's Name:</label>
-            <input type="text" id="father_name" name="father_name" required placeholder="Enter your father's name">
+        <form action="https://formsubmit.co/sureshotclasses11@gmail.com" method="POST">
+            <input type="text" name="name" required placeholder="Your Name">
+            <input type="email" name="email" optional placeholder="Your Email (Optional)">
+            <input type="tel" name="phone" required placeholder="Your Phone Number">
+            <textarea name="message" required placeholder="Your Message"></textarea>
+            
+            <!-- ✅ Hidden fields for customization -->
+            <input type="hidden" name="_subject" value="New Inquiry from Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thank-you.html">
 
-            <label for="mother_name">Mother's Name:</label>
-            <input type="text" id="mother_name" name="mother_name" required placeholder="Enter your mother's name">
-
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required placeholder="Enter your address (e.g.- Lalganj, Vaishali)"></textarea>
-
-            <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no.">
-
-            <button type="submit">Submit Registration</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
