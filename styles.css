@@ -425,6 +425,12 @@ footer {
 
 /* 🔹 Responsive Design (Mobile-Friendly) */
 @media screen and (max-width: 768px) {
+
+    header,nav{
+        width: 100vw;
+
+    }
+    
     nav ul {
         flex-direction: column;
         gap: 10px;
