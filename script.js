@@ -108,3 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
     updateCountdown();
 });
+
+// Location Address
+const address = "Sanche Darbar Sabji Mandi, V5GC+97 Lalganj, Bihar"; // Replace with your destination
+
+const getDirectionsButton = document.querySelector('.get-directions-button');
+getDirectionsButton.href = `https://www.google.com/maps/dir/?api=1&destination=${address}`;
