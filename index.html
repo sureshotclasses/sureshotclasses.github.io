@@ -17,7 +17,7 @@
 <body>
     <!-- 🔹 Header Section (Navigation) -->
     <header>
-        <h1>Sureshot Classes  v1.8</h1>
+        <h1>Sureshot Classes</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -33,39 +33,25 @@
     <!-- 🔹 Home Section -->
     <section id="home">
         <h2>Welcome to Sureshot Classes</h2>
-        <p>Personalized learning experience with guaranteed results. Join our 7-day free demo classes today!</p>
+        <p>Personalized learning experience with guaranteed results. </p>
+        <p>Sureshot Classes provides high-quality education to students from Class 5th to 12th (CBSE and Bihar Board).</p>
+        <p>Join our 7-day free demo classes today!</p>
         <a href="#registration_" class="cta-button">Get Started</a>
     </section>
 
     <!-- 🔹 Announcements -->
     <section id="announcements_" class="section"></section>
-    <section id="announcements" class="section">
+    <!-- <section id="announcements" class="section">
         <h2>Latest Announcements</h2>
         <marquee behavior="scroll" direction="left">
             🎉 Admissions Open for 2025! | 🎉 Join our 7-day free demo classes! | 💡 Scholarships Available for meritorious students | 🏆 Awards for Top Performers 🎉
         </marquee>
-    </section>
+    </section> -->
 
-    <!-- 
     <section id="announcements" class="section">
         <h2>Latest Announcements</h2>
         <div class="announcement-ticker" role="marquee" aria-live="polite">
             🎉 Admissions Open for 2025! | 🎉 Join our 7-day free demo classes! | 💡 Scholarships Available for meritorious students | 🏆 Awards for Top Performers 🎉
-        </div>
-    </section> -->
-
-    <!-- 🔹 About Us -->
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>Sureshot Classes provides high-quality coaching for students from Class 2nd to 10th (CBSE). We focus on personalized mentoring and effective teaching methods.</p>
-        <h3>🔗 Connect with Us 👇</h3>
-
-        <div class="social-icons">
-            <!-- 
-            <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
-            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a> 
-            -->
-            <a href="https://instagram.com/sureshot.classes" target="_blank">📸 Instagram @sureshot.classes</a>
         </div>
     </section>
 
@@ -74,6 +60,13 @@
     <section id="courses" class="section">
         <h2>📚 Our Courses</h2>
         <div class="course-list">
+
+            <div class="course" onclick="toggleCourse('english')">
+                <h3>🗣 Spoken English</h3>
+                <p class="course-details" id="english">
+                  Personalized spoken English course designed to help you speak confidently and effectively.              </p>
+            </div>
+
             <div class="course" onclick="toggleCourse('math')">
               <h3>📘 Mathematics</h3>
               <p class="course-details" id="math">
@@ -86,12 +79,6 @@
               <p class="course-details" id="science">
                 Physics, Chemistry, and Biology explained with real-life examples and interactive experiments.
               </p>
-            </div>
-        
-            <div class="course" onclick="toggleCourse('english')">
-              <h3>🗣 Spoken English</h3>
-              <p class="course-details" id="english">
-                Personalized spoken English course designed to help you speak confidently and effectively.              </p>
             </div>
         
             <div class="course" onclick="toggleCourse('homework')">
@@ -131,6 +118,11 @@
     <section id="course-highlights">
         <h2>📚 Why Choose Sureshot Classes?</h2>
         <div class="highlights-container">
+            <div class="highlight">
+                <img src="assets/images/english.png" alt="Spoken English">
+                <h3>Spoken English Classes</h3>
+                <p>Perfect environment and roadmap to help students speak confidently and effectively in English.</p>
+            </div>
             <div class="highlight">
                 <img src="assets/images/math.png" alt="Math">
                 <h3>Expert Math Coaching</h3>
@@ -247,9 +239,24 @@
         </div>
     </section>
 
+    <!-- 🔹 About Us -->
+    <section id="about" class="section">
+        <!-- <h2>About Us</h2>
+        <p>Sureshot Classes provides high-quality coaching for students from Class 2nd to 10th (CBSE). We focus on personalized mentoring and effective teaching methods.</p> -->
+        <h3>🔗 Connect with Us 👇</h3>
+
+        <div class="social-icons">
+            <!-- 
+            <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a> 
+            -->
+            <a href="https://instagram.com/sureshot.classes" target="_blank">📸 Instagram</a>
+        </div>
+    </section>
+
     <!-- Floating Whatsapp Button -->
     <a id="whatsappFloat" href="https://wa.me/919709169655?text=Hi%20Sureshot%20Classes,%20I'm%20interested%20in%20knowing%20more%20about%20your%20courses." target="_blank">
-        <span class="whatsapp-icon">💬</span> Chat on WhatsApp
+        <span class="whatsapp-icon">💬</span> WhatsApp
     </a>
 
     <!-- 🔹 Floating "Back to Top" Button -->
