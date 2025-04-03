@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sureshot Classes | Home</title>
+    <!-- Add these after the title tag -->
+    <meta name="description" content="Sureshot Classes provides high-quality coaching for students from Class 2nd to 10th (CBSE). Join our 7-day free demo classes!">
+    <meta property="og:title" content="Sureshot Classes | Home">
+    <meta property="og:description" content="Personalized learning experience with guaranteed results. Join our 7-day free demo classes today!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sureshotclasses.github.io">
+    <meta property="og:image" content="https://sureshotclasses.github.io/assets/images/banner.jpeg">
     <link rel="stylesheet" href="styles.css?v=1.3"> <!-- 🔹 Forces browser to load latest CSS -->
     <script defer src="script.js"></script>
 </head>
@@ -39,16 +46,26 @@
         </marquee>
     </section>
 
+    <!-- 
+    <section id="announcements" class="section">
+        <h2>Latest Announcements</h2>
+        <div class="announcement-ticker" role="marquee" aria-live="polite">
+            🎉 Admissions Open for 2025! | 🎉 Join our 7-day free demo classes! | 💡 Scholarships Available for meritorious students | 🏆 Awards for Top Performers 🎉
+        </div>
+    </section> -->
+
     <!-- 🔹 About Us -->
     <section id="about" class="section">
         <h2>About Us</h2>
         <p>Sureshot Classes provides high-quality coaching for students from Class 2nd to 10th (CBSE). We focus on personalized mentoring and effective teaching methods.</p>
-        <h3>🔗 Connect with Us</h3>
+        <h3>🔗 Connect with Us 👇</h3>
 
         <div class="social-icons">
+            <!-- 
             <a href="https://facebook.com/" target="_blank">📘 Facebook</a>
-            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a>
-            <a href="https://instagram.com/sureshot.classes" target="_blank">📸 Instagram</a>
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a> 
+            -->
+            <a href="https://instagram.com/sureshot.classes" target="_blank">📸 Instagram @sureshot.classes</a>
         </div>
     </section>
 
@@ -87,10 +104,11 @@
     </section>
 
     <!-- 🔹 Registration Form -->
+    <!-- Update this section in your index.html file -->
     <section id="registration_" class="section"></section>
     <section id="registration" class="section">
         <h2>Student Registration</h2>
-        <form id="registrationForm">
+        <form id="registrationForm" action="https://script.google.com/macros/s/AKfycbzi3sDcMspH_37NGTdZ5iyZbyUfWY1Wf9LywLJRwcRLgv80ODCSEKFpqgM_XIJEpVOi/exec" method="POST">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your full name">
 
@@ -104,7 +122,7 @@
             <textarea id="address" name="address" required placeholder="Enter your address (e.g.- Lalganj, Vaishali)"></textarea>
 
             <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no.">
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no." pattern="[0-9]{10}" title="Please enter exactly 10 digits">
 
             <button type="submit">Submit Registration</button>
         </form>
@@ -199,22 +217,40 @@
     <section id="contact_"></section>
     <section id="contact">
         <h2>📩 Contact Us</h2>
-        <p>Have questions? Need help? Fill out the form below and we’ll get back to you soon!</p>
+        <p>Have questions? Need help? Contact us directly!</p>
 
-        <form action="https://formsubmit.co/sureshotclasses11@gmail.com" method="POST">
-            <input type="text" name="name" required placeholder="Your Name">
-            <input type="email" name="email" optional placeholder="Your Email (Optional)">
-            <input type="tel" name="phone" required placeholder="Your 10-digit Phone Number">
-            <textarea name="message" required placeholder="Your Message"></textarea>
+        <!-- Direct contact options -->
+        <div class="contact-options">
+            <a href="tel:+919709169655" class="contact-option">
+                <span class="contact-icon">📞</span>
+                <div class="contact-info">
+                    <h3>Call Us</h3>
+                    <p>+91 97091 69655</p>
+                </div>
+            </a>
             
-            <!-- ✅ Hidden fields for customization -->
-            <input type="hidden" name="_subject" value="New Inquiry from Website">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="thank-you.html">
-
-            <button type="submit">Send Message</button>
-        </form>
+            <a href="https://wa.me/919709169655?text=Hi%20Sureshot%20Classes,%20I'm%20interested%20in%20knowing%20more%20about%20your%20courses." target="_blank" class="contact-option whatsapp">
+                <span class="contact-icon">💬</span>
+                <div class="contact-info">
+                    <h3>WhatsApp</h3>
+                    <p>Chat with us now</p>
+                </div>
+            </a>
+            
+            <a href="mailto:sureshotclasses11@gmail.com" class="contact-option">
+                <span class="contact-icon">✉️</span>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>sureshotclasses11@gmail.com</p>
+                </div>
+            </a>
+        </div>
     </section>
+
+    <!-- Floating Whatsapp Button -->
+    <a id="whatsappFloat" href="https://wa.me/919709169655?text=Hi%20Sureshot%20Classes,%20I'm%20interested%20in%20knowing%20more%20about%20your%20courses." target="_blank">
+        <span class="whatsapp-icon">💬</span> Chat on WhatsApp
+    </a>
 
     <!-- 🔹 Floating "Back to Top" Button -->
     <button id="backToTop" onclick="scrollToTop()">⬆ Back to Top</button>
