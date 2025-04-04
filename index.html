@@ -98,31 +98,6 @@
         </div>
     </section>
 
-    <!-- 🔹 Registration Form -->
-    <!-- Update this section in your index.html file -->
-    <section id="registration_" class="section"></section>
-    <section id="registration" class="section">
-        <h2>Student Registration</h2>
-        <form id="registrationForm" action="https://script.google.com/macros/s/AKfycbzi3sDcMspH_37NGTdZ5iyZbyUfWY1Wf9LywLJRwcRLgv80ODCSEKFpqgM_XIJEpVOi/exec" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-
-            <label for="father_name">Father's Name:</label>
-            <input type="text" id="father_name" name="father_name" required placeholder="Enter your father's name">
-
-            <label for="mother_name">Mother's Name:</label>
-            <input type="text" id="mother_name" name="mother_name" required placeholder="Enter your mother's name">
-
-            <label for="address">Address:</label>
-            <textarea id="address" name="address" required placeholder="Enter your address (e.g.- Lalganj, Vaishali)"></textarea>
-
-            <label for="mobile">Mobile Number:</label>
-            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no." pattern="[0-9]{10}" title="Please enter exactly 10 digits">
-
-            <button type="submit">Submit Registration</button>
-        </form>
-    </section>
-
     <section id="course-highlights">
         <h2>📚 Why Choose Sureshot Classes?</h2>
         <div class="highlights-container">
@@ -173,7 +148,8 @@
     </section>
 
     <section id="countdown">
-        <h2>🚀 Hurry! Admissions Closing Soon</h2>
+        <h2>🚀 Hurry! First 150 Students @<del>999/month</del> @<ins>499/month</ins></h2>
+        <h3>Admissions Closing Soon</h3>
         <div id="timer">
             <span id="days">00</span> Days 
             <span id="hours">00</span> Hours 
@@ -181,6 +157,30 @@
             <span id="seconds">00</span> Seconds
         </div>
         <a href="#registration_" class="cta-button">Register Now</a>
+    </section>
+
+    <!-- 🔹 Registration Form -->
+    <section id="registration_" class="section"></section>
+    <section id="registration" class="section">
+        <h2>Student Registration</h2>
+        <form id="registrationForm" action="https://script.google.com/macros/s/AKfycbzi3sDcMspH_37NGTdZ5iyZbyUfWY1Wf9LywLJRwcRLgv80ODCSEKFpqgM_XIJEpVOi/exec" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required placeholder="Enter your father's name">
+
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required placeholder="Enter your mother's name">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required placeholder="Enter your address (e.g.- Lalganj, Vaishali)"></textarea>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your 10-digit mobile no." pattern="[0-9]{10}" title="Please enter exactly 10 digits">
+
+            <button type="submit">Submit Registration</button>
+        </form>
     </section>
 
     <!-- 🔹 Location Section (Google Maps Embed) -->

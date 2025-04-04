@@ -161,6 +161,7 @@ nav ul li a:hover {
 
 #home h2 {
     font-size: 36px;
+    padding: 22px;
 }
 
 #home p {
@@ -307,7 +308,7 @@ nav ul li a:hover {
 #registration {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #007bff, #6500b3);
     color: white;
     border-radius: 10px;
     margin: 30px auto;
@@ -546,8 +547,18 @@ form button:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+#countdown h3{
+    padding: 20px;
+    background: linear-gradient(90deg, #4a34db, #7629b9, #8d1f88, #2980b9, #4a34db);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: textGradient 5s linear infinite;
+}
+
 #timer {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin: 20px 0;
 }
