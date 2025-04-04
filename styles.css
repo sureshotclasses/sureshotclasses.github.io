@@ -319,8 +319,11 @@ nav ul li a:hover {
 
 #registration h2 {
     font-size: 28px;
-    margin-bottom: 20px;
     font-weight: bold;
+}
+
+#registration h3{
+    padding: 15px 0px;
 }
 
 /* 🔹 Registration Form */
