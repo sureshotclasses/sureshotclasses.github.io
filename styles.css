@@ -591,7 +591,7 @@ footer {
 /* Register Floating Button */
 #registerFloat {
     position: fixed;
-    bottom: 140px; /* Position above the Back to Top button */
+    bottom: 142px; /* Position above the Back to Top button */
     right: 20px;
     z-index: 99;
     background-color: #9f25d3; /* WhatsApp green color */
