@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Admissions Countdown Timer
 document.addEventListener("DOMContentLoaded", function () {
-  const targetDate = new Date("April 15, 2025 23:59:59").getTime();
+  const targetDate = new Date("April 25, 2025 23:59:59").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
