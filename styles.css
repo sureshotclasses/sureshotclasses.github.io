@@ -1,5 +1,5 @@
 /* 🔹 General Reset */ 
-/* v1.8 */
+/* v1.800 */
 
 :root {
     --primary-color: #007bff;
@@ -594,7 +594,7 @@ footer {
     bottom: 142px; /* Position above the Back to Top button */
     right: 20px;
     z-index: 99;
-    background-color: #9f25d3; /* WhatsApp green color */
+    background-color: #cb0b64; /* WhatsApp green color */
     color: white;
     cursor: pointer;
     padding: 12px 20px;
@@ -773,6 +773,7 @@ footer {
         margin-top: 0px;
         padding-top: 20px;
     }
+
 
     .map-container {
         padding-bottom: 100%;
